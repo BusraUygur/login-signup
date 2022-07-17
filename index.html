@@ -3,13 +3,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <title>Login / Signup Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
 </head>
 
 <body>
     <div class="container">
-        <form class="form" id="login">
+        <form class="form form-hidden" id="login">
             <h1 class="form-title">Login</h1>
+            <div class="form-error-message"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username or email">
+                <div class="form-input-error-mes"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password">
+                <div class="form-input-error-mes"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form-text">
+                <a href="#" class="form-link">Forgot your password?</a>
+            </p>
+            <p class="form-text">
+                <a class="form-link" href="./" id="linkCreateAccount">Don't have an account? Create an account</a>
+            </p>
+        </form>
+        <form class="form" id="createAccount">
+            <h1 class="form-title">Create Account</h1>
+            <div class="form-error-message"></div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username">
+                <div class="form-input-error-mes"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Email Address">
+                <div class="form-input-error-mes"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password">
+                <div class="form-input-error-mes"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Confirm password">
+                <div class="form-input-error-mes"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form-text">
+                <a class="form-link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
         </form>
     </div>
 
